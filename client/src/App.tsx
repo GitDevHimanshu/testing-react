@@ -27,7 +27,7 @@ function App() {
             <Route path='/' element={<Signup/>} />
             <Route path='/loginget' element={<Login />} />
             <Route  path='/adminhome' element={loggedin?(<Header />):(<Login/>)} >
-              <Route index path='/adminhome' element={<Admin />} />
+              <Route path='/adminhome' element={<Admin />} />
               <Route path='/adminhome/contact' element={<Contact />} />
               <Route path='/adminhome/about' element={<About />} />
               <Route path='/adminhome/queries' element={<Querie />} />
