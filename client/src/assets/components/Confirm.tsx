@@ -24,7 +24,7 @@ function Confirm(props: proptype) {
   async function deleteHandler(id:string) {
     try {
       const res = await axios.delete(
-        "https://testing-react-jrl2.onrender.com/admin/del-product",
+        "https://testing-react-kbm3.onrender.com/admin/del-product",
         {
           headers: { "Content-Type": "application/json" },
           data: { id: id },

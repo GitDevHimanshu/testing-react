@@ -45,7 +45,7 @@ function Login() {
   }
 
   async function loginHandler() {
-    const res = await fetch("https://testing-react-jrl2.onrender.com/login", {
+    const res = await fetch("https://testing-react-kbm3.onrender.com/login", {
       method: "POST",
       headers: { "Content-Type": 'application/json' },
       body: JSON.stringify({ password: state.password, username: state.username })

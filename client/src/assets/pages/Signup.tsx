@@ -27,7 +27,7 @@ function Signup() {
     }
 
     const signupHandeler = async() =>{
-        const res = await fetch("https://testing-react-jrl2.onrender.com/register",{
+        const res = await fetch("https://testing-react-kbm3.onrender.com/register",{
           method:"POST",
           headers:{"Content-Type":'application/json'},
           body: JSON.stringify({name: name, password: password, username: username})

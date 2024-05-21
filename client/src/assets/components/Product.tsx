@@ -28,7 +28,7 @@ function Product(props: ProductProps) {
   }
 
   async function editHandeler(id:string) {
-    axios.patch('https://testing-react-jrl2.onrender.com/admin/edit-product',{
+    axios.patch('https://testing-react-kbm3.onrender.com/admin/edit-product',{
       id: id,
         name: uname,
         price: uprice,

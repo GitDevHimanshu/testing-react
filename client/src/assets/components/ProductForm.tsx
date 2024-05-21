@@ -27,7 +27,7 @@ function ProductForm(props:productprops) {
     const addProduct = async() =>{
         try{  
         
-          const res = await axios.post('https://testing-react-jrl2.onrender.com/admin/add-product',{ 
+          const res = await axios.post('https://testing-react-kbm3.onrender.com/admin/add-product',{ 
             name:name ,
             quantity:quantity, 
             price:price 

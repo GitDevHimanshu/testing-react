@@ -13,7 +13,7 @@ function Header() {
   }
   
   const logoutHandler = ()=>{
-    axios.post('https://testing-react-jrl2.onrender.com/logout')
+    axios.post('https://testing-react-kbm3.onrender.com/logout')
     .then((res)=>{
       if(res.data) {
         localStorage.setItem("isLoggedIn", JSON.stringify(false));

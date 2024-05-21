@@ -17,7 +17,7 @@ function Message(props:messageProps) {
     }
 
     const deleteMessage = async (id: string) =>{
-       const response = await axios.delete(`https://testing-react-jrl2.onrender.com/admin/delete-message?id=${id}`)
+       const response = await axios.delete(`https://testing-react-kbm3.onrender.com/admin/delete-message?id=${id}`)
        if(response.status === 200){
           const filteredArray = props.msgArray.filter((item:any)=>{
               if(item._id !== id){
