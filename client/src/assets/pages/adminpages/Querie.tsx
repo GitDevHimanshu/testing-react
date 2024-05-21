@@ -15,7 +15,7 @@ function Querie() {
 
   useEffect(()=>{
     const fetchQueries = ()=>{
-        axios.get("https://testing-react-235m.onrender.com/admin/get-queries")
+        axios.get("https://testing-react-kbm3.onrender.com/admin/get-queries")
         .then((response:any) => setQueries(response.data))
     }
     fetchQueries();

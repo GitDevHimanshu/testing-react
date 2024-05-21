@@ -30,7 +30,7 @@ function Contact() {
   }
 
   const sendMessage = async()=>{
-    axios.post("https://testing-react-235m.onrender.com/admin/sendmessage",{
+    axios.post("https://testing-react-kbm3.onrender.com/admin/sendmessage",{
       name : name,
       email : email,
       message : message,

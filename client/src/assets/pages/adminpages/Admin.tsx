@@ -12,7 +12,7 @@ function Admin() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('https://testing-react-235m.onrender.com/admin/get-product');
+        const res = await axios.get('https://testing-react-kbm3.onrender.com/admin/get-product');
         const data = res.data ? res.data : [];
         context?.setProduct(data);
       } catch (error) {
