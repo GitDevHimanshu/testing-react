@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Signup from './assets/pages/Signup'
 import Login from './assets/pages/Login';
 import Admin from './assets/pages/adminpages/Admin';
@@ -23,7 +23,7 @@ function App() {
     <>
       <BrowserRouter >
         <AuthContext.Provider value={{loggedin, setLoggedin, showform, setShowForm , product, setProduct}}>
-          <switch>
+          <Routes>
             <Route path='/' element={<Signup/>} />
             <Route path='/loginget' element={<Login />} />
             <Route  path='/adminhome' element={loggedin?(<Header />):(<Login/>)} >
@@ -32,7 +32,7 @@ function App() {
               <Route path='/adminhome/about' element={<About />} />
               <Route path='/adminhome/queries' element={<Querie />} />
             </Route>
-          </switch>
+          </Routes>
         </AuthContext.Provider>
       </BrowserRouter>
     </>
